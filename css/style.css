@@ -1,0 +1,293 @@
+body {
+font-family: 'Artifika', serif;
+
+}
+.f-icon{
+    font-size: 30px !important;
+    margin-top: 10px;
+    height: 60px;
+    width: 60px;
+    line-height: 60px !important;
+    border-radius: 100%;
+    background-color: crimson;
+    color: #fff;
+}
+
+
+.crimson{
+    color: #DC143C;
+}
+
+.thumbnail{
+  border: none;
+  -webkit-box-shadow: 2px 3px 16px -7px rgba(0,0,0,0.75);
+  -moz-box-shadow: 2px 3px 16px -7px rgba(0,0,0,0.75);
+  box-shadow: 2px 3px 16px -7px rgba(0,0,0,0.75); 
+}
+
+h1 {
+	font-size: 50px;
+}
+a {
+	-moz-transition: 1s ease-in-out;
+		transition: 1s ease-in-out;
+}
+.top-bar{
+	background: #f0f0f0;
+	 position: relative;
+     left: 0;
+    right: 0;
+}
+.top-bar ul{
+	padding: 10px 0;
+}
+.top-bar .social ul li a,
+.top-bar .address ul li a {
+	color: #666;
+}
+.top-bar .address ul li a {
+	margin-right: 20px;
+	cursor: pointer;
+}
+.top-bar ul li i{
+	margin-right: 10px;
+
+}
+.top-bar .navbar-nav>li>a {
+	padding: 0;
+}
+
+.top-bar .social .navbar-nav>li>a {
+	display: inline-block;
+	opacity: 0.7;
+}
+.top-bar  .social li a:hover,
+.top-bar .address ul li a:hover
+{
+	color: crimson;
+	opacity: 1;
+}
+
+/*===================== Start navbar_head Section ====================*/
+.navbar_head .navbar{
+	padding: 5px;
+	border: 0px solid transparent;
+	background-color: #fff;
+	color: #eee;
+	position: relative;
+}
+.navbar_head .navbar-brand{
+	color: #333;
+}
+.navbar_head .navbar-brand span{
+	color: crimson
+}
+.navbar_head .navbar-brand:hover {
+
+	color: #333;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+	text-transform: uppercase;
+	color: #777
+}
+.navbar-inverse .navbar-nav>li>a:hover,
+.navbar-inverse .navbar-nav>li>a:focus
+ {
+	color:#777
+
+}
+
+.navbar-inverse ul li:hover {
+	border-bottom: 2px solid crimson;
+}
+/*============================ End Navbar_head Section ==================================*/
+
+/*=========================== Start slider Section =====================================*/
+
+.slider {
+    position: relative;
+    min-height: 700px;
+}
+
+.slider .carousel-inner img {
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 700px;
+}
+.slider .carousel-caption {
+	margin-bottom: 20%;	
+
+
+}
+.slider .carousel-caption h1 {
+	color: crimson
+}
+.slider .carousel-control {
+	
+	background-image: none;
+	width: 5%;
+	padding: 10px;	
+
+}
+
+
+.carousel-control .glyphicon-chevron-left, 
+.carousel-control .glyphicon-chevron-right, 
+.carousel-control .icon-next, .carousel-control 
+.icon-prev {
+	margin-top: -100px;
+	transition: 0.5s ease-in-out
+}
+.carousel-control .glyphicon-chevron-left:hover, 
+.carousel-control .glyphicon-chevron-right:hover, 
+.carousel-control .icon-next:hover, 
+.carousel-control .icon-prev:hover {
+	color: crimson
+}
+/*=========================== End slider Section =====================================*/
+/*========================== Start Welcome Section ======================*/
+/*========================== End Welcome Section ======================*/
+.welcome {
+    padding: 40px 20px;  
+    position: relative;
+    height: 100%;   
+    
+    
+}
+
+.welcome-text .type {
+    font-size:38px;
+    font-weight: bold;
+    line-height: 1.5em;
+    letter-spacing: 2px;
+}
+.welcome-text p {
+    font-size: 16px;
+    line-height: 1.5em;
+}
+
+.welcome .welcome-pic .two-pic .img-responsive{
+    max-width: 120%;    
+}
+.welcome .welcome-pic .one-pic .img-responsive{
+    max-width: 109.5%;    
+}
+/*============================= Start features Section =================================== */
+.feat {
+    background: #edeeef;
+}
+.feat .title{
+    color: #FFFFFF;
+    background-color:crimson;
+    text-transform: uppercase;
+    display: block;
+    margin: 40px auto;
+    margin: 50px auto;
+    margin-bottom: 20px;
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    font-weight: 900;
+    font-size: 13px;
+}
+/*============================ End features Section =============================*/
+
+/*============================ Start Promise Section =============================*/
+.promise .promise-picture {
+    height: 600px;
+    background-image: url('../images/promise.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-top: 600px solid transparent;
+    border-right: 120px solid whitesmoke;
+}
+
+.promise .promise-text {
+    padding: 40px 20px;
+    height: 600px;
+    background-color:whitesmoke
+}
+
+.promise .promise-icons p {
+    font-size: 16px;
+    line-height: 1.2em;
+}
+.promise .promise-icons h2 i{
+    color: crimson;
+    font-size: 45px;
+}
+
+
+/*============================ End Promise Section =============================*/
+
+/*============================ Start Call To Action Center =========================*/
+/* ==================================================
+  Call-to-action Styling
+  ================================================== */
+.cta {
+  background-color: crimson;
+  padding: 25px 0;
+}
+
+.cta h2 {
+  margin-bottom: 5px;
+}
+
+.cta h2,
+.cta p {
+  color: #fff;
+}
+
+.cta p {
+  margin-bottom: 0;
+  opacity: .75;
+}
+
+.cta .btn {
+    background-color: transparent;
+    padding: 10px;
+    padding: 15px 45px;
+    border-radius: 50px;
+    border: 3px solid #fff;
+    font-weight: bold;
+    top: 25px;
+    position: relative;
+  
+}
+.cta a {
+    font-size: 15px;
+}
+.cta .btn:hover {
+    background-color: #fff;
+    color:crimson;    
+}
+
+/* ========================== Start footer ======================= */
+.footer {
+    background-color:whitesmoke
+}
+
+.footer span {
+    color: crimson;
+}
+.footer .fa {
+    color: crimson;
+    margin-left: 15px;
+    font-size: 30px;
+}
+.top {
+    position: fixed;
+    right: 20px;
+    color: #fff;
+    font-size: 10px;
+    padding: 10px;
+    background-color: crimson;
+    z-index: 30;
+    bottom: 10px;
+    cursor: pointer;
+    display: none;
+}
