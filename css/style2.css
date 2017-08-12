@@ -8,11 +8,6 @@
   background-color: #333;
   color: #fff;
 }
-
-body {
-font-family: 'Artifika', serif;
-
-}
 .f-icon{
     font-size: 30px !important;
     margin-top: 10px;
@@ -20,13 +15,7 @@ font-family: 'Artifika', serif;
     width: 60px;
     line-height: 60px !important;
     border-radius: 100%;
-    background-color: crimson;
     color: #fff;
-}
-
-
-.crimson{
-    color: #DC143C;
 }
 
 .thumbnail{
@@ -45,9 +34,24 @@ font-family: 'Artifika', serif;
 h1 {
 	font-size: 50px;
 }
-a {
+a,
+.slider .carousel-control span
+{
 	-moz-transition: 1s ease-in-out;
 		transition: 1s ease-in-out;
+}
+
+.special-heading { 
+    position:relative;
+}
+.special-heading:after { 
+    content:"";
+    display:block;
+    position:absolute;
+    top:35px;
+    left:0;
+    border:2px solid #2a2c2c;
+    width:50px;
 }
 /*
     ====================================================================================
@@ -57,8 +61,8 @@ a {
 /*========================== Start Section Top-bar ================================*/
 .top-bar{
 	background: #f0f0f0;
-	 position: relative;
-     left: 0;
+    position: relative;
+    left: 0;
     right: 0;
 }
 .top-bar ul{
@@ -90,7 +94,6 @@ a {
 .top-bar  .social li a:hover,
 .top-bar .address ul li a:hover
 {
-	color: crimson;
 	opacity: 1;
 }
 
@@ -98,14 +101,23 @@ a {
 .navbar_head .navbar{
 	padding: 5px;
 	border: 0px solid transparent;
-  width: 100%;
+    width: 100%;
 	background-color: #fff;
 	color: #eee;
-  z-index:9999;
 	position: relative;
-  border-radius: 0;
+    border-radius: 0;
 }
-
+.navbar_head .navbar-header a {
+    font-weight: bold;
+}
+.navbar-header a:first-letter {
+    color: white;
+    padding: 5px 8px;
+    margin-right: 1px;
+    font-size: 23px;
+    font-weight: bold;
+    border-radius: 5px;
+}
 .navbar-inverse .navbar-toggle {
     border: transparent;
 }
@@ -120,16 +132,10 @@ a {
     border-color: transparent;
 }
 
-.navbar_head.navbar-inverse .navbar-toggle .icon-bar {
-    background-color: crimson;
-}
-
 .navbar_head .navbar-brand{
 	color: #333;
 }
-.navbar_head .navbar-brand span{
-	color: crimson
-}
+
 .navbar_head .navbar-brand:hover {
 
 	color: #333;
@@ -152,9 +158,7 @@ a {
 
 }
 
-.navbar-inverse ul li:hover {
-	border-bottom: 2px solid crimson;
-}
+
 
 /*============================ End Navbar_head Section ==================================*/
 
@@ -177,9 +181,7 @@ a {
 
 
 }
-.slider .carousel-caption h1 {
-	color: crimson
-}
+
 .slider .carousel-control {
 	
 	background-image: none;
@@ -188,12 +190,81 @@ a {
 
 }
 /*================================== End Slider =====================================*/
+
+
 /*
     ====================================================================================
     ========================================= Home(1) ==================================
     ====================================================================================
 */
+/*=====================Start Option Box========================*/
+.option-box { 
+    top:100px;
+    left:0;
+    z-index:9999;
+    position:fixed;
+}
 
+.option-box .color-option { 
+    float:left;
+    background:#2b2c2d;
+    padding:10px;
+    width:170px;
+    height: auto;
+    display: none
+}
+.option-box .gear-check { 
+    position:absolute;
+    right:-40px;
+    width:40px;
+    height:40px;
+    color:#f2f2f2;
+    font-size:26px;
+    line-height:40px;
+    background:#323232;
+    text-align:center;
+    cursor:pointer;
+}
+.option-box .color-option .color li { 
+    color:#00f;
+    width:20px;
+    height:20px;
+    display:inline-block;
+    margin-right:5px;
+    cursor:pointer;
+    margin-top:20px;
+
+}
+.option-box .color-option h4 { 
+    color:#e6e6e6; 
+   font-size: 15px;
+    padding: 10px;
+}
+.option-box .color-option h4 i {
+    cursor: pointer
+}
+.option-box .color-option h4:after { 
+    margin-left:20px;
+    margin-top:-35px;
+    top:75px;
+    width:95px; 
+}
+
+.option-box .color-option .font li {
+    color: #fff;
+    padding: 5px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    display: none
+}
+.option-box .color-option .font li:after {
+    margin-left:20px;
+    margin-top:15px;
+    border:1px solid  #f00;
+    top:75px;
+    width:30px; 
+}
+/*=====================Start Option Box========================*/
 
 /*
     ====================================================================================
@@ -244,16 +315,11 @@ a {
     border-color: transparent;
 }
 
-.navbar-inverse .navbar-toggle .icon-bar {
-    background-color: crimson;
-}
 
 .navbar_head2 .navbar-brand{
 	color: #000;
 }
-.navbar_head2 .navbar-brand span{
-	color: crimson
-}
+
 .navbar_head2 .navbar-brand:hover {
 
 	color: #333;
@@ -271,19 +337,12 @@ a {
 
 }
 
-.navbar-inverse ul li:hover {
-	border-bottom: 2px solid crimson;
-}
 .navbar_head2 .header-text {
     position: absolute;
     top: 300px;
     left: 50px;
     color: black;
 }
-.navbar_head2 .header-text b {
-    color: crimson;
-}
-
 /*=========================== End slider Section =====================================*/
 /*========================== Start Welcome Section ======================*/
 /*========================== End Welcome Section ======================*/
@@ -312,14 +371,16 @@ a {
 .welcome .welcome-pic .one-pic .img-responsive{
     max-width: 109.5%;    
 }
+
+
 /*============================= Start features Section =================================== */
 .feat {
     background: #edeeef;
     padding-bottom: 45px;
 }
 .feat .title{
-    color: #FFFFFF;
-    background-color:crimson;
+    color: #000;
+
     text-transform: uppercase;
     display: block;
     margin: 40px auto;
@@ -329,10 +390,76 @@ a {
     height: 50px;
     line-height: 50px;
     font-weight: 900;
-    font-size: 13px;
+    font-size: 25px;
+}
+.feat span {
+    margin-right: 10px;
 }
 /*============================ End features Section =============================*/
+/* ========================== Start Section skills ====================== */
+.skills { 
+    padding-top:40px;
+    padding-bottom:60px;
 
+}
+
+.skills .skill-prog {
+    height: 300px;
+    padding: 30px;
+    
+}
+.skills .skill-prog h4 {
+    font-size: 15px;
+}
+.skills h2 { 
+    font-weight:bold;
+        
+}
+.progress {
+    height:16px;
+    width: 400px
+    
+}
+.progress .progress-bar { 
+    font-size:18px;
+    line-height:36px;
+    text-align:left;
+    text-indent:10px;
+}
+
+/* ========================== End Section skills ====================== */
+
+/*--======================Start counter section-about us=====================*/
+.counter-about-us {
+    width: 100%;
+    height: auto;
+    background-image: url(../images/count22.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    padding: 120px 0;
+
+
+}
+.counter-about-us .count {
+    display: block;
+    margin-top: 7%;
+    
+}
+.counter-about-us .count h4,
+.counter-about-us .count span
+{
+    color: #fff;
+}
+.counter-about-us .count span {
+    font-weight: bold;
+    font-size: 20px;
+}
+.counter-about-us .count p b {
+    font-weight: bold;
+    font-size: 20px;
+}
 /*============================ Start Promise Section =============================*/
 .promise .promise-picture {
     height: 600px;
@@ -341,7 +468,6 @@ a {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    border-top: 600px solid transparent;
     border-right: 120px solid whitesmoke;
 }
 
@@ -356,7 +482,6 @@ a {
     line-height: 1.2em;
 }
 .promise .promise-icons h2 i{
-    color: crimson;
     font-size: 45px;
 }
 
@@ -368,7 +493,6 @@ a {
   Call-to-action Styling
   ================================================== */
 .cta {
-  background-color: crimson;
   padding: 25px 0;
 }
 
@@ -401,13 +525,16 @@ a {
     font-size: 15px;
 }
 .cta .btn:hover {
-    background-color: #fff;
-    color:crimson;    
+    background-color: #fff;   
 }
 
 /*============================ Start portfolio Section =============================*/
 #portfolio{
   margin-top: 20px;
+}
+
+#portfolio .col-md-4{
+  position: relative;
 }
 
 #portfolio .col-md-4.mix{
@@ -416,12 +543,58 @@ a {
 
 #portfolio .menu .btn-danger{
   background-color: #dc143c;
-  border: none;
   margin-bottom: 15px;
+  border: 0;
+  border-radius: 2px;
+  padding: 20px;
+  margin-right: -6px;
+  font-weight: bolder;
+  transition: 1.3s;
+  -webkit-transition:  1.3s;
+}
+
+#portfolio .menu .btn-danger:hover{
+  background-color: #AD233F !important;
+  transition: 1.3s;
+  -webkit-transition:  1.3s;
 }
 
 #portfolio .menu .btn-danger.active{
   background-color: #AD233F !important;
+  border-color: #dc143c;
+}
+
+#portfolio .thumbnail{
+  padding: 0;
+  text-align: center;
+}
+
+#portfolio .overlay{
+  position: absolute;
+  top: 0px;
+  height: 250px;
+  margin-right: 15px;
+  transition: 0.8s;
+  -webkit-transition:  0.8s;
+}
+
+#portfolio .caption{
+  margin-top: 30px;
+  display: none;
+}
+
+#portfolio .thumbnail:hover .overlay{
+  background-color: rgba(245, 245, 245, 0.76);
+  transition: 0.8s;
+  -webkit-transition:  0.8s;
+}
+
+#portfolio .thumbnail:hover .caption{
+  display: inline-block;
+}
+
+#portfolio .caption a:hover{
+  text-decoration: none;
 }
 /*============================ End portfolio Section =============================*/
 
@@ -574,6 +747,58 @@ a {
   margin-top: 5px;
 }
 /*============================ End timeline Section =============================*/
+
+/*============================ Start testimonial Section =============================*/
+.testimonial{
+  margin-top: 20px;
+  padding-top: 10px;
+  background-color: #f9f9f9;
+}
+
+.testimonial h4{
+  margin-bottom: 0px;
+}
+
+.testimonial small{
+  color: #d2d2d2;
+}
+
+.slick-slide img
+{
+  height: 150px;
+  width: 150px;
+  border-radius: 100%;
+  border: 3px solid #dc143c;
+  margin: auto;
+}
+/*============================ End testimonial Section =============================*/
+
+/*============================ Start companies Section =============================*/
+.companies {
+  background-color: #edeeef;
+}
+#companies {
+  padding: 15px;
+}
+.companies .owl-carousel .fa {
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+.companies .owl-carousel .fa:hover {
+    cursor: pointer;
+}
+#companies .fa
+{
+  font-size: 60px;
+  color: #d2d2d2;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+/*============================ End companies Section =============================*/
+
 /*========= Start Contact Us ======================*/
 .contact-us { 
     background:url('../images/contact4.jpg');
@@ -592,9 +817,7 @@ a {
     padding-top:40px;
     padding-bottom:40px;
 }
-.contact-us .fa {
-    color: crimson
-}
+
 .contact-us p { 
     margin-bottom:40px;
 }
@@ -612,10 +835,6 @@ a {
     transition:all 0.7s ease-in-out;
 }
 .contact-us input[type="text"]:focus,
-.contact-us textarea:focus { 
-    box-shadow:1px 1px 1px crimson inset,
-    1px 1px 1px #d7540d;
-}
     .contact-us .fields button {
     -webkit-transition:all 0.7s ease-in-out; 
     -moz-transition:all 0.7s ease-in-out; 
@@ -623,153 +842,22 @@ a {
     transition:all 0.7s ease-in-out; 
 }
 
-/*============================ Start testimonial Section =============================*/
-#testimonial{
-  margin-top: 20px;
-}
-.testimonial{
-    background: #dc143c;
-    padding: 30px 40px 30px 90px;
-    margin: 50px 20px 50px 100px;
-    border-radius: 0 85px 85px 0;
-    color: #fff;
-    position: relative;
-}
-.testimonial .pic{
-    width: 190px;
-    height: 190px;
-    line-height: 200px;
-    border-radius: 50%;
-    border: 14px solid #dc143c;
-    position: absolute;
-    top: -6px;
-    left: -100px;
-    overflow: hidden;
-}
-.testimonial .testimonial-title{
-    display: inline-block;
-    width: 35%;
-    float: left;
-    font-size: 20px;
-    font-weight: 700;
-    color: #fff;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    padding: 28px 20px;
-    margin: 0;
-    border-right: 1px solid rgba(255,255,255,0.5);
-}
-.testimonial .testimonial-title small{
-    display: block;
-    font-size: 12px;
-    color: #fff;
-    margin-top: 5px;
-}
-.testimonial .description{
-    display: inline-block;
-    width: 65%;
-    font-size: 15px;
-    color: #fff;
-    letter-spacing: 0.5px;
-    margin-bottom: 0;
-    padding: 28px 0 28px 28px;
-    position: relative;
-}
-.testimonial .description:before{
-    content: "\f10d";
-    font-family: fontawesome;
-    position: absolute;
-    top: 0;
-    left: 10px;
-    font-size: 20px;
-    color: rgba(255,255,255,0.5);
-}
-.testimonial .description:after{
-    content: "\f10e";
-    font-family: fontawesome;
-    font-size: 20px;
-    color: rgba(255,255,255,0.5);
-    position: absolute;
-    bottom: 5px;
-}
-.owl-theme .owl-controls .owl-page.active span,
-.owl-theme .owl-controls .owl-page span{
-    width: 7px;
-    height: 7px;
-    background: #dc143c;
-    border: 4px solid #ed899d;
-    box-sizing: content-box;
-}
-.owl-theme .owl-controls .owl-page span{
-    border: 4px solid transparent;
-    background: #bcbcbc;
-}
-@media only screen and (max-width: 767px){
-    .testimonial{
-        border-radius: 40px;
-        margin: 90px 15px 0;
-        padding: 100px 40px 30px 40px;
-    }
-    .testimonial .pic{
-        position: absolute;
-        top: -85px;
-        left: 0;
-        right: 0;
-        margin: 0 auto;
-    }
-    .testimonial .testimonial-title{
-        width: 100%;
-        float: none;
-        border-right: none;
-        text-align: center;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-    }
-    .testimonial .description{
-        width: 100%;
-    }
-}
-@media only screen and (max-width: 480px){
-    .testimonial{ padding: 100px 30px 30px; }
-}
-/*============================ End testimonial Section =============================*/
-
-/*============================== Start companies Section ==============================*/
-.companies{
-  background-color: #edeeef;
-}
-#companies{
-  margin-top: 20px;
-  padding: 15px;
-}
-
-#companies .fa
-{
-  font-size: 60px;
-  color: #d2d2d2;
-}
-/*============================== End companies Section ==============================*/
-
-
 /* ========================== Start footer ======================= */
 .footer {
     background-color:whitesmoke
 }
 
-.footer span {
-    color: crimson;
-}
 .footer .fa {
-    color: crimson;
     margin-left: 15px;
     font-size: 30px;
 }
-.top {
+.top
+ {
     position: fixed;
     right: 20px;
     color: #fff;
     font-size: 10px;
     padding: 10px;
-    background-color: crimson;
     z-index: 30;
     bottom: 10px;
     cursor: pointer;

@@ -1,0 +1,56 @@
+.f-icon,
+.navbar_head.navbar-inverse .navbar-toggle .icon-bar,
+.navbar-inverse .navbar-toggle .icon-bar,
+.progress .progress-bar,
+.cta,
+.top,
+.contact-us button:hover,
+.navbar-header a:first-letter
+{
+    background-color:#FF9899
+}
+
+.contact-us button {
+    background-color: #e39696;
+    border:#e39696;
+}
+
+.top-bar  .social li a:hover,
+.top-bar .address ul li a:hover,
+.navbar_head .navbar-brand span,
+.slider .carousel-caption h1,
+.navbar_head2 .navbar-brand span,
+.navbar_head2 .header-text b,
+.counter-about-us .count .fa,
+.counter-about-us .count,
+.promise .promise-icons h2 i,
+.cta .btn:hover,
+.companies .owl-carousel .fa:hover,
+.contact-us .fa,
+.footer span,
+.footer .fa,
+.feat span,
+.skills span,
+.promise span,
+.portfolio span,
+.slider .carousel-control span:hover
+
+{
+    color: #FF9899 !important
+}
+
+.navbar-inverse ul li:hover
+
+{
+	border-bottom: 2px solid #FF9899;
+}
+
+.contact-us textarea:focus,
+.contact-us input[type="text"]:focus
+{ 
+    box-shadow:1px 1px 1px #FF9899 inset,
+    1px 1px 1px #FF9899;
+}
+.option-box .color-option h4:after { 
+        border:2px solid  #FF9899
+}
