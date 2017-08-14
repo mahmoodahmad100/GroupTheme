@@ -1,2 +1,2 @@
 # Group Theme
-sample pages with different styles
+* 2 pages with different navbar style
