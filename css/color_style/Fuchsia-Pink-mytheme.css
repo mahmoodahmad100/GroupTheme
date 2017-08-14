@@ -1,0 +1,70 @@
+.f-icon,
+.navbar_head.navbar-inverse .navbar-toggle .icon-bar,
+.navbar-inverse .navbar-toggle .icon-bar,
+.progress .progress-bar,
+.cta,
+.top,
+.contact-us button:hover,
+.navbar-header a:first-letter,
+#portfolio .menu .btn-danger,
+.footer h2:first-letter
+{
+    background-color: #FF77FF;
+}
+
+#portfolio .menu .btn-danger:hover {
+    background-color: #e754e7 !important;  
+}
+
+#portfolio .menu .btn-danger.active {
+    background-color: #e754e7 !important;
+}
+.top-bar  .social li a:hover,
+.top-bar .address ul li a:hover,
+.navbar_head .navbar-brand span,
+.slider .carousel-caption h1,
+.navbar_head2 .navbar-brand span,
+.navbar_head2 .header-text b,
+.counter-about-us .count .fa,
+.counter-about-us .count,
+.promise .promise-icons h2 i,
+.cta .btn:hover,
+.companies .owl-carousel .fa:hover,
+.contact-us .fa,
+.footer span,
+.footer .fa,
+.feat span,
+.skills span,
+.promise span,
+.portfolio span,
+.slider .carousel-control span:hover,
+#companies .fa:hover ,
+#portfolio .caption a
+
+{
+    color: #FF77FF !important
+}
+
+.slick-slide img {
+    border: 3px solid #FF77FF;
+}
+
+.navbar-inverse ul li:hover
+
+{
+	border-bottom: 2px solid #FF77FF;
+}
+
+.contact-us textarea:focus,
+.contact-us input[type="text"]:focus
+{ 
+    box-shadow:1px 1px 1px #FF77FF inset,
+    1px 1px 1px #FF77FF;
+}
+.contact-us button {
+    background-color: #e88ee8;
+    border:#e88ee8
+}
+.option-box .color-option h4:after { 
+        border:2px solid  #e88ee8
+}

@@ -1,19 +1,14 @@
-::selection
-{
-  background-color: #333;
-  color: #fff;
-}
-::-moz-selection
-{
-  background-color: #333;
-  color: #fff;
+::selection {
+    background-color: #333;
+    color: #fff;
 }
 
-body {
-font-family: 'Artifika', serif;
-
+::-moz-selection {
+    background-color: #333;
+    color: #fff;
 }
-.f-icon{
+
+.f-icon {
     font-size: 30px !important;
     margin-top: 10px;
     height: 60px;
@@ -23,79 +18,120 @@ font-family: 'Artifika', serif;
     color: #fff;
 }
 
-.thumbnail{
-  border: none;
-  -webkit-box-shadow: 2px 3px 16px -7px rgba(0,0,0,0.75);
-  -moz-box-shadow: 2px 3px 16px -7px rgba(0,0,0,0.75);
-  box-shadow: 2px 3px 16px -7px rgba(0,0,0,0.75); 
+.thumbnail {
+    border: none;
+    -webkit-box-shadow: 2px 3px 16px -7px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 2px 3px 16px -7px rgba(0, 0, 0, 0.75);
+    box-shadow: 2px 3px 16px -7px rgba(0, 0, 0, 0.75);
 }
 
-.thumbnail > img
-{
+.thumbnail>img {
     width: 100%;
     height: 250px;
 }
 
 h1 {
-	font-size: 50px;
+    font-size: 50px;
 }
-a {
-	-moz-transition: 1s ease-in-out;
-		transition: 1s ease-in-out;
+
+a,
+.slider .carousel-control span {
+    -moz-transition: 1s ease-in-out;
+    transition: 1s ease-in-out;
 }
+
+.special-heading {
+    position: relative;
+}
+
+.special-heading:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 35px;
+    left: 0;
+    border: 2px solid #2a2c2c;
+    width: 50px;
+}
+
+
 /*
     ====================================================================================
     ========================================= Home(1) ==================================
     ====================================================================================
 */
+
+
 /*========================== Start Section Top-bar ================================*/
-.top-bar{
-	background: #f0f0f0;
+
+.top-bar {
+    background: #f0f0f0;
     position: relative;
     left: 0;
     right: 0;
 }
-.top-bar ul{
-	padding: 10px 0;
+
+.top-bar ul {
+    padding: 10px 0;
 }
+
 .top-bar .social ul li {
     display: inline;
 }
+
 .top-bar .social ul li a,
 .top-bar .address ul li a {
-	color: #666;
+    color: #666;
 }
-.top-bar .address ul li a {
-	margin-right: 20px;
-	cursor: pointer;
-}
-.top-bar ul li i{
-	margin-right: 10px;
 
+.top-bar .address ul li a {
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.top-bar ul li i {
+    margin-right: 10px;
 }
 
 .top-bar .navbar-nav>li>a {
-	padding: 0;
+    padding: 0;
 }
 
 .top-bar .social .navbar-nav>li>a {
-	opacity: 0.7;
-}
-.top-bar  .social li a:hover,
-.top-bar .address ul li a:hover
-{
-	opacity: 1;
+    opacity: 0.7;
 }
 
+.top-bar .social li a:hover,
+.top-bar .address ul li a:hover {
+    opacity: 1;
+}
+
+
 /*===================== Start navbar_head Section ====================*/
-.navbar_head .navbar{
-	padding: 5px;
-	border: 0px solid transparent;
+
+.navbar_head .navbar {
+    padding: 5px;
+    border: 0px solid transparent;
     width: 100%;
-	background-color: #fff;
-	color: #eee;
-	position: relative;
+    background-color: #fff;
+    color: #eee;
+    position: relative;
     border-radius: 0;
+}
+
+.navbar_head .navbar-header a {
+    font-weight: bold;
+}
+
+.navbar-header a:first-letter,
+.footer h2:first-letter
+{
+    color: white;
+    padding: 5px 8px;
+    margin-right: 1px;
+    font-size: 23px;
+    font-weight: bold;
+    border-radius: 5px;
 }
 
 .navbar-inverse .navbar-toggle {
@@ -103,44 +139,41 @@ a {
 }
 
 .navbar_head .navbar-inverse .navbar-toggle:hover,
-.navbar_head .navbar-inverse .navbar-toggle:focus
-{
-    background-color: transparent;    
+.navbar_head .navbar-inverse .navbar-toggle:focus {
+    background-color: transparent;
 }
 
-.navbar_head .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+.navbar_head .navbar-inverse .navbar-collapse,
+.navbar-inverse .navbar-form {
     border-color: transparent;
 }
 
-.navbar_head .navbar-brand{
-	color: #333;
+.navbar_head .navbar-brand {
+    color: #333;
 }
 
 .navbar_head .navbar-brand:hover {
-
-	color: #333;
+    color: #333;
 }
 
-.navbar-nav > li > a
-{
-  padding-bottom: 10px;
+.navbar-nav>li>a {
+    padding-bottom: 10px;
 }
 
 .navbar-inverse .navbar-nav>li>a {
-	text-transform: uppercase;
-	color: #777;
+    text-transform: uppercase;
+    color: #777;
     font-size: 12px;
 }
+
 .navbar-inverse .navbar-nav>li>a:hover,
-.navbar-inverse .navbar-nav>li>a:focus
- {
-	color:#777
-
+.navbar-inverse .navbar-nav>li>a:focus {
+    color: #777
 }
-
 
 
 /*============================ End Navbar_head Section ==================================*/
+
 
 /*=========================== Start slider Section =====================================*/
 
@@ -157,18 +190,19 @@ a {
 }
 
 .slider .carousel-caption {
-	margin-bottom: 20%;	
-
-
+    margin-bottom: 20%;
 }
 
 .slider .carousel-control {
-	
-	background-image: none;
-	width: 5%;
-	padding: 10px;	
-
+    background-image: none;
+    width: 5%;
+    padding: 10px;
 }
+
+.carousel-caption p{
+    color: #776c69;
+}
+
 /*================================== End Slider =====================================*/
 
 
@@ -177,46 +211,86 @@ a {
     ========================================= Home(1) ==================================
     ====================================================================================
 */
-/*=====================Start Option Box========================*/
-.option-box { 
-    top:100px;
-    left:0;
-    z-index:9999;
-    position:fixed;
-}
-.option-box .color-option { 
-    float:left;
-    background:#2b2c2d;
-    padding:10px;
-    width:150px;
-    display: none
-}
-.option-box .gear-check { 
-    position:absolute;
-    right:-40px;
-    width:40px;
-    height:40px;
-    color:#f2f2f2;
-    font-size:26px;
-    line-height:40px;
-    background:#323232;
-    text-align:center;
-    cursor:pointer;
-}
-.option-box .color-option ul li { 
-    color:#00f;
-    width:20px;
-    height:20px;
-    display:inline-block;
-    margin-right:5px;
-    cursor:pointer;
-    margin-top:20px;
-}
-.option-box .color-option h4 { 
-    color:#e6e6e6; 
-}
+
 
 /*=====================Start Option Box========================*/
+
+.option-box {
+    top: 100px;
+    left: 0;
+    z-index: 9999;
+    position: fixed;
+}
+
+.option-box .color-option {
+    float: left;
+    background: #2b2c2d;
+    padding: 10px;
+    width: 200px;
+    height: 200px;
+    display: none;
+    overflow-y: scroll;
+}
+
+.option-box .gear-check {
+    position: absolute;
+    right: -40px;
+    width: 40px;
+    height: 40px;
+    color: #f2f2f2;
+    font-size: 26px;
+    line-height: 40px;
+    background: #323232;
+    text-align: center;
+    cursor: pointer;
+}
+
+.option-box .color-option .color li {
+    color: #00f;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    margin-right: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.option-box .color-option h4 {
+    color: #e6e6e6;
+    font-size: 15px;
+    padding: 10px;
+}
+
+.option-box .color-option h4 i {
+    cursor: pointer
+}
+
+.option-box .color-option h4:after {
+    margin-left: 20px;
+    margin-top: -35px;
+    top: 75px;
+    width: 95px;
+}
+
+.option-box .color-option .font li {
+    color: #fff;
+    padding: 5px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    display: none
+}
+
+.option-box .color-option .font li:after {
+    margin-left: 20px;
+    margin-top: 15px;
+    border: 1px solid #f00;
+    top: 75px;
+    width: 30px;
+}
+
+
+/*=====================Start Option Box========================*/
+
 
 /*
     ====================================================================================
@@ -224,33 +298,38 @@ a {
     ====================================================================================
 */
 
+
 /*===================== Start navbar_head Section ====================*/
+
 .navbar_head2 {
     height: 100%;
 }
-#wrapper{
-	height: 700px;
-	background-image:url(../images/head3.jpg);
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
+
+#wrapper {
+    height: 700px;
+    background-image: url(../images/head4.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-.navbar_head2 .navbar{
+
+.navbar_head2 .navbar {
     min-height: 0 !important;
-	border: 0px solid transparent;
+    border: 0px solid transparent;
     padding: 0;
     margin: 0;
     background-color: transparent;
     border-color: transparent;
-    z-index:9999;
-    position:absolute;
-    width:100%;
+    z-index: 9999;
+    position: absolute;
+    width: 100%;
 }
 
-.navbar_head2 .navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:focus, .navbar-inverse .navbar-nav>.open>a:hover {
- 
+.navbar_head2 .navbar-inverse .navbar-nav>.open>a,
+.navbar-inverse .navbar-nav>.open>a:focus,
+.navbar-inverse .navbar-nav>.open>a:hover {
     background-color: transparent;
-    color: #000;    
+    color: #000;
 }
 
 .navbar-inverse .navbar-toggle {
@@ -258,52 +337,64 @@ a {
 }
 
 .navbar-inverse .navbar-toggle:hover,
-.navbar-inverse .navbar-toggle:focus
-{
-    background-color: transparent;    
+.navbar-inverse .navbar-toggle:focus {
+    background-color: transparent;
 }
 
-.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+.navbar-inverse .navbar-collapse,
+.navbar-inverse .navbar-form {
     border-color: transparent;
 }
 
-
-.navbar_head2 .navbar-brand{
-	color: #000;
+.navbar_head2 .navbar-brand {
+    color: #000;
 }
 
 .navbar_head2 .navbar-brand:hover {
-
-	color: #333;
+    color: #333;
 }
 
 .navbar-inverse .navbar-nav>li>a {
-	text-transform: uppercase;
-	color: #000;
+    text-transform: uppercase;
+    color: #000;
     font-size: 12px;
 }
-.navbar-inverse .navbar-nav>li>a:hover,
-.navbar-inverse .navbar-nav>li>a:focus
- {
-	color:#777
 
+.navbar-inverse .navbar-nav>li>a:hover,
+.navbar-inverse .navbar-nav>li>a:focus {
+    color: #777
 }
 
 .navbar_head2 .header-text {
     position: absolute;
-    top: 300px;
-    left: 50px;
+    top: 250px;
+    left: 10%;
     color: black;
 }
+
+/*=========================== Fixed Navbar =====================================*/
+
+.navbar_head2 .navbar2 {
+    height: 60px;
+    min-height: 60px;
+    padding: 10;
+    margin: 10;
+    background-color: #fff;
+    border-color: transparent;
+    position: fixed;
+    transition: all 1s ease-in-out;
+}
 /*=========================== End slider Section =====================================*/
+
+
 /*========================== Start Welcome Section ======================*/
+
+
 /*========================== End Welcome Section ======================*/
+
 .welcome {
-    padding: 40px 20px;  
+    padding: 100px 20px;
     position: relative;
-    height: 100%;   
-    
-    
 }
 
 .welcome-text h2 {
@@ -311,28 +402,31 @@ a {
     font-weight: bold;
     line-height: 1.5em;
     letter-spacing: 2px;
+
 }
+
 .welcome-text p {
-    font-size: 16    px;
+    font-size: 16px;
     line-height: 1.5em;
 }
 
-.welcome .welcome-pic .two-pic .img-responsive{
-    max-width: 120%;    
+.welcome .welcome-pic {
+    margin-top: 30px;
 }
-.welcome .welcome-pic .one-pic .img-responsive{
-    max-width: 109.5%;    
+.welcome .welcome-pic img {
+/*    margin-left: 30px;*/
+    height: 400px;
+    width: 100%;
 }
-
-
 /*============================= Start features Section =================================== */
+
 .feat {
     background: #edeeef;
     padding-bottom: 45px;
 }
-.feat .title{
-    color: #FFFFFF;
 
+.feat .title {
+    color: #000;
     text-transform: uppercase;
     display: block;
     margin: 40px auto;
@@ -342,74 +436,83 @@ a {
     height: 50px;
     line-height: 50px;
     font-weight: 900;
-    font-size: 13px;
+    font-size: 25px;
 }
+
+.feat span {
+    margin-right: 10px;
+}
+
+
 /*============================ End features Section =============================*/
+
+
 /* ========================== Start Section skills ====================== */
-.skills { 
-    padding-top:40px;
-    padding-bottom:60px;
 
+.skills {
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
-.skills .skill-prog {
-    height: 300px;
-    padding: 30px;
-    
-}
 .skills .skill-prog h4 {
     font-size: 15px;
 }
-.skills h2 { 
-    font-weight:bold;
-        
+
+.skills h2 {
+    font-weight: bold;
 }
+
 .progress {
-    height:16px;
-    width: 400px
-    
+    height: 16px;
 }
-.progress .progress-bar { 
-    font-size:18px;
-    line-height:36px;
-    text-align:left;
-    text-indent:10px;
+
+.progress .progress-bar {
+    font-size: 18px;
+    line-height: 36px;
+    text-align: left;
+    text-indent: 10px;
 }
+
 
 /* ========================== End Section skills ====================== */
 
+
 /*--======================Start counter section-about us=====================*/
+
 .counter-about-us {
     width: 100%;
     height: auto;
-    background-image: url(../images/count22.jpg);
+    background-image: url(../images/count.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
     padding: 120px 0;
-
-
 }
+
 .counter-about-us .count {
     display: block;
     margin-top: 7%;
-    
 }
+
 .counter-about-us .count h4,
-.counter-about-us .count span
-{
+.counter-about-us .count span {
     color: #fff;
 }
+
 .counter-about-us .count span {
     font-weight: bold;
     font-size: 20px;
 }
+
 .counter-about-us .count p b {
     font-weight: bold;
     font-size: 20px;
 }
+
+
 /*============================ Start Promise Section =============================*/
+
 .promise .promise-picture {
     height: 600px;
     background-image: url('../images/promise.jpg');
@@ -417,46 +520,52 @@ a {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    border-top: 600px solid transparent;
     border-right: 120px solid whitesmoke;
 }
 
 .promise .promise-text {
     padding: 40px 20px;
     height: 600px;
-    background-color:whitesmoke
+    background-color: whitesmoke
 }
 
 .promise .promise-icons p {
     font-size: 16px;
     line-height: 1.2em;
 }
-.promise .promise-icons h2 i{
+
+.promise .promise-icons h2 i {
     font-size: 45px;
 }
 
 
 /*============================ End Promise Section =============================*/
 
+
 /*============================ Start Call To Action Center =========================*/
+
+
 /* ==================================================
   Call-to-action Styling
   ================================================== */
+
 .cta {
-  padding: 25px 0;
+    padding: 25px 0;
 }
 
 .cta h2 {
-  margin-bottom: 5px;
+    margin-bottom: 5px;
 }
 
 .cta h2,
 .cta p {
-  color: #fff;
+    color: #fff;
 }
 
 .cta p {
-  margin-bottom: 0;
-  opacity: .75;
+    margin-bottom: 0;
+    opacity: .75;
 }
 
 .cta .btn {
@@ -468,397 +577,356 @@ a {
     font-weight: bold;
     top: 25px;
     position: relative;
-  
 }
+
 .cta a {
     font-size: 15px;
 }
+
 .cta .btn:hover {
-    background-color: #fff;   
+    background-color: #fff;
 }
+
 
 /*============================ Start portfolio Section =============================*/
-#portfolio{
-  margin-top: 20px;
+#portfolio {
+    margin-top: 20px;
+    text-align: center;
 }
 
-#portfolio .col-md-4.mix{
-  display: none;
+#portfolio .col-md-4 {
+    position: relative;
 }
 
-#portfolio .menu .btn-danger{
-  background-color: #dc143c;
-  border: none;
-  margin-bottom: 15px;
+#portfolio .col-md-4.mix {
+    display: none;
 }
 
-#portfolio .menu .btn-danger.active{
-  background-color: #AD233F !important;
+#portfolio .menu ul{
+    margin-right: 43px;
+}
+
+#portfolio .menu .btn-danger {
+    display: inline-block;
+    margin-bottom: 15px;
+    border: 0;
+    border-radius: 2px;
+    padding: 20px;
+    margin-right: -6px;
+    font-weight: bolder;
+    transition: 1.3s;
+    -webkit-transition: 1.3s;
+}
+
+#portfolio .menu .btn-danger:hover {
+    transition: 1.3s;
+    -webkit-transition: 1.3s;
+}
+
+
+#portfolio .thumbnail {
+    padding: 0;
+    text-align: center;
+}
+
+#portfolio .overlay {
+    position: absolute;
+    top: 0px;
+    height: 250px;
+    margin-right: 15px;
+    transition: 0.8s;
+    -webkit-transition: 0.8s;
+}
+
+#portfolio .caption {
+    margin-top: 30px;
+    display: none;
+}
+
+#portfolio .caption a{
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+#portfolio .thumbnail:hover .overlay {
+    background-color: rgba(245, 245, 245, 0.92);
+    transition: 0.8s;
+    -webkit-transition: 0.8s;
+}
+
+#portfolio .thumbnail:hover .caption {
+    display: inline-block;
 }
 /*============================ End portfolio Section =============================*/
 
+
 /*============================ Start timeline Section =============================*/
+
 .timeline {
-  list-style: none;
-  padding: 20px 0 20px;
-  position: relative;
+    list-style: none;
+    padding: 20px 0 20px;
+    position: relative;
 }
 
 .timeline:before {
-  top: 150px;
-  bottom: 0;
-  position: absolute;
-  content: " ";
-  width: 3px;
-  background-color: #eeeeee;
-  left: 50%;
-  margin-left: -1.5px;
+    top: 150px;
+    bottom: 0;
+    position: absolute;
+    content: " ";
+    width: 3px;
+    background-color: #eeeeee;
+    left: 50%;
+    margin-left: -1.5px;
 }
 
-.timeline > li {
-  margin-bottom: 20px;
-  position: relative;
+.timeline>li {
+    margin-bottom: 20px;
+    position: relative;
 }
 
-.timeline > li:before,
-.timeline > li:after {
-  content: " ";
-  display: table;
+.timeline>li:before,
+.timeline>li:after {
+    content: " ";
+    display: table;
 }
 
-.timeline > li:after {
-  clear: both;
+.timeline>li:after {
+    clear: both;
 }
 
-.timeline > li:before,
-.timeline > li:after {
-  content: " ";
-  display: table;
+.timeline>li:before,
+.timeline>li:after {
+    content: " ";
+    display: table;
 }
 
-.timeline > li:after {
-  clear: both;
+.timeline>li:after {
+    clear: both;
 }
 
-.timeline > li > .timeline-panel {
-  width: 46%;
-  float: left;
-  border: 1px solid #d4d4d4;
-  border-radius: 2px;
-  padding: 20px;
-  position: relative;
-  -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
-  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+.timeline>li>.timeline-panel {
+    width: 46%;
+    float: left;
+    border: 1px solid #d4d4d4;
+    border-radius: 2px;
+    padding: 20px;
+    position: relative;
+    -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
 }
 
-.timeline > li > .timeline-panel:before {
-  position: absolute;
-  top: 26px;
-  right: -15px;
-  display: inline-block;
-  border-top: 15px solid transparent;
-  border-left: 15px solid #ccc;
-  border-right: 0 solid #ccc;
-  border-bottom: 15px solid transparent;
-  content: " ";
+.timeline>li>.timeline-panel:before {
+    position: absolute;
+    top: 26px;
+    right: -15px;
+    display: inline-block;
+    border-top: 15px solid transparent;
+    border-left: 15px solid #ccc;
+    border-right: 0 solid #ccc;
+    border-bottom: 15px solid transparent;
+    content: " ";
 }
 
-.timeline > li > .timeline-panel:after {
-  position: absolute;
-  top: 27px;
-  right: -14px;
-  display: inline-block;
-  border-top: 14px solid transparent;
-  border-left: 14px solid #fff;
-  border-right: 0 solid #fff;
-  border-bottom: 14px solid transparent;
-  content: " ";
+.timeline>li>.timeline-panel:after {
+    position: absolute;
+    top: 27px;
+    right: -14px;
+    display: inline-block;
+    border-top: 14px solid transparent;
+    border-left: 14px solid #fff;
+    border-right: 0 solid #fff;
+    border-bottom: 14px solid transparent;
+    content: " ";
 }
 
-.timeline > li > .timeline-badge {
-  color: #fff;
-  width: 50px;
-  height: 50px;
-  line-height: 50px;
-  font-size: 1.4em;
-  text-align: center;
-  position: absolute;
-  top: 16px;
-  left: 50%;
-  margin-left: -25px;
-  background-color: #999999;
-  z-index: 10;
-  border-top-right-radius: 50%;
-  border-top-left-radius: 50%;
-  border-bottom-right-radius: 50%;
-  border-bottom-left-radius: 50%;
+.timeline>li>.timeline-badge {
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.4em;
+    text-align: center;
+    position: absolute;
+    top: 16px;
+    left: 50%;
+    margin-left: -25px;
+    background-color: #999999;
+    z-index: 10;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
 }
 
-.timeline > li.timeline-inverted > .timeline-panel {
-  float: right;
+.timeline>li.timeline-inverted>.timeline-panel {
+    float: right;
 }
 
-.timeline > li.timeline-inverted > .timeline-panel:before {
-  border-left-width: 0;
-  border-right-width: 15px;
-  left: -15px;
-  right: auto;
+.timeline>li.timeline-inverted>.timeline-panel:before {
+    border-left-width: 0;
+    border-right-width: 15px;
+    left: -15px;
+    right: auto;
 }
 
-.timeline > li.timeline-inverted > .timeline-panel:after {
-  border-left-width: 0;
-  border-right-width: 14px;
-  left: -14px;
-  right: auto;
+.timeline>li.timeline-inverted>.timeline-panel:after {
+    border-left-width: 0;
+    border-right-width: 14px;
+    left: -14px;
+    right: auto;
 }
 
 .timeline-badge.primary {
-  background-color: #2e6da4 !important;
+    background-color: #2e6da4 !important;
 }
 
 .timeline-badge.success {
-  background-color: #3f903f !important;
+    background-color: #3f903f !important;
 }
 
 .timeline-badge.warning {
-  background-color: #f0ad4e !important;
+    background-color: #f0ad4e !important;
 }
 
 .timeline-badge.danger {
-  background-color: #d9534f !important;
+    background-color: #d9534f !important;
 }
 
 .timeline-badge.info {
-  background-color: #5bc0de !important;
+    background-color: #5bc0de !important;
 }
 
 .timeline-title {
-  margin-top: 0;
-  color: inherit;
+    margin-top: 0;
+    color: inherit;
 }
 
-.timeline-body > p,
-.timeline-body > ul {
-  margin-bottom: 0;
+.timeline-body>p,
+.timeline-body>ul {
+    margin-bottom: 0;
 }
 
-.timeline-body > p + p {
-  margin-top: 5px;
+.timeline-body>p+p {
+    margin-top: 5px;
 }
+
+
 /*============================ End timeline Section =============================*/
+
+
+/*============================ Start testimonial Section =============================*/
+
+.testimonial {
+    margin-top: 20px;
+    padding-top: 10px;
+    background-color: #f9f9f9;
+}
+
+.testimonial h4 {
+    margin-bottom: 0px;
+}
+
+.testimonial small {
+    color: #d2d2d2;
+}
+
+.slick-slide img {
+    height: 150px;
+    width: 150px;
+    border-radius: 100%;
+    margin: auto;
+}
+
+
+/*============================ End testimonial Section =============================*/
+
+
 /*============================ Start companies Section =============================*/
-.companies{
-  background-color: #edeeef;
+
+.companies {
+    background-color: #edeeef;
 }
-#companies{
-  margin-top: 20px;
-  padding: 15px;
+
+#companies {
+    padding: 15px;
 }
-.companies .owl-carousel .fa {
+
+#companies .fa {
+    cursor: pointer;
+    font-size: 60px;
+    color: #d2d2d2;
+    -webkit-transition: all 0.5s ease-in-out;
     -moz-transition: all 0.5s ease-in-out;
     -o-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
+    margin-top: 10px;
 }
-.companies .owl-carousel .fa:hover {
-    cursor: pointer;
-}
-#companies .fa
-{
-  font-size: 60px;
-  color: #d2d2d2;
-  -webkit-transition: all 0.5s ease-in-out;
-  -moz-transition: all 0.5s ease-in-out;
-  -o-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
-}
-.owl-carousel .owl-nav button.owl-next, 
-.owl-carousel .owl-nav button.owl-prev, 
-.owl-carousel button.owl-dot {
-    display: none;
-}
+
+
+
 /*============================ End companies Section =============================*/
 
 
 /*========= Start Contact Us ======================*/
-.contact-us { 
-    background:url('../images/contact4.jpg');
+
+.contact-us {
+    background: url('../images/contact.jpg');
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    -webkit-background-size:cover;
-    -moz-background-size:cover;
-    -o-background-size:cover;
-    background-size:cover
-}
-.contact-us .fields { 
-    
-    min-height:300px;
-    color:#fff;
-    padding-top:40px;
-    padding-bottom:40px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover
 }
 
-.contact-us p { 
-    margin-bottom:40px;
+.contact-us .fields {
+    min-height: 300px;
+    color: #fff;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
-.contact-us textarea { 
-    height:108px;
+
+.contact-us p {
+    margin-bottom: 40px;
 }
+
+.contact-us textarea {
+    height: 108px;
+}
+
 .contact-us input[type="text"],
-.contact-us textarea { 
-    background:rgba(230,230,230,0.2); 
-    color:#fff; 
-    border:none; 
-    -webkit-transition:all 0.7s ease-in-out; 
-    -moz-transition:all 0.7s ease-in-out; 
-    -o-transition:all 0.7s ease-in-out; 
-    transition:all 0.7s ease-in-out;
+.contact-us textarea {
+    background: rgba(230, 230, 230, 0.2);
+    color: #fff;
+    border: none;
+    -webkit-transition: all 0.7s ease-in-out;
+    -moz-transition: all 0.7s ease-in-out;
+    -o-transition: all 0.7s ease-in-out;
+    transition: all 0.7s ease-in-out;
 }
+
 .contact-us input[type="text"]:focus,
-    .contact-us .fields button {
-    -webkit-transition:all 0.7s ease-in-out; 
-    -moz-transition:all 0.7s ease-in-out; 
-    -o-transition:all 0.7s ease-in-out; 
-    transition:all 0.7s ease-in-out; 
+.contact-us .fields button {
+    -webkit-transition: all 0.7s ease-in-out;
+    -moz-transition: all 0.7s ease-in-out;
+    -o-transition: all 0.7s ease-in-out;
+    transition: all 0.7s ease-in-out;
 }
-
-/*============================ Start testimonial Section =============================*/
-#testimonial{
-  margin-top: 20px;
-}
-.testimonial{
-    background: #dc143c;
-    padding: 30px 40px 30px 90px;
-    margin: 50px 20px 50px 100px;
-    border-radius: 0 85px 85px 0;
-    color: #fff;
-    position: relative;
-}
-.testimonial .pic{
-    width: 190px;
-    height: 190px;
-    line-height: 200px;
-    border-radius: 50%;
-    border: 14px solid #dc143c;
-    position: absolute;
-    top: -6px;
-    left: -100px;
-    overflow: hidden;
-}
-.testimonial .testimonial-title{
-    display: inline-block;
-    width: 35%;
-    float: left;
-    font-size: 20px;
-    font-weight: 700;
-    color: #fff;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    padding: 28px 20px;
-    margin: 0;
-    border-right: 1px solid rgba(255,255,255,0.5);
-}
-.testimonial .testimonial-title small{
-    display: block;
-    font-size: 12px;
-    color: #fff;
-    margin-top: 5px;
-}
-.testimonial .description{
-    display: inline-block;
-    width: 65%;
-    font-size: 15px;
-    color: #fff;
-    letter-spacing: 0.5px;
-    margin-bottom: 0;
-    padding: 28px 0 28px 28px;
-    position: relative;
-}
-.testimonial .description:before{
-    content: "\f10d";
-    font-family: fontawesome;
-    position: absolute;
-    top: 0;
-    left: 10px;
-    font-size: 20px;
-    color: rgba(255,255,255,0.5);
-}
-.testimonial .description:after{
-    content: "\f10e";
-    font-family: fontawesome;
-    font-size: 20px;
-    color: rgba(255,255,255,0.5);
-    position: absolute;
-    bottom: 5px;
-}
-.owl-theme .owl-controls .owl-page.active span,
-.owl-theme .owl-controls .owl-page span{
-    width: 7px;
-    height: 7px;
-    background: #dc143c;
-    border: 4px solid #ed899d;
-    box-sizing: content-box;
-}
-.owl-theme .owl-controls .owl-page span{
-    border: 4px solid transparent;
-    background: #bcbcbc;
-}
-@media only screen and (max-width: 767px){
-    .testimonial{
-        border-radius: 40px;
-        margin: 90px 15px 0;
-        padding: 100px 40px 30px 40px;
-    }
-    .testimonial .pic{
-        position: absolute;
-        top: -85px;
-        left: 0;
-        right: 0;
-        margin: 0 auto;
-    }
-    .testimonial .testimonial-title{
-        width: 100%;
-        float: none;
-        border-right: none;
-        text-align: center;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-    }
-    .testimonial .description{
-        width: 100%;
-    }
-}
-@media only screen and (max-width: 480px){
-    .testimonial{ padding: 100px 30px 30px; }
-}
-/*============================ End testimonial Section =============================*/
-
-/*============================== Start companies Section ==============================*/
-.companies{
-  background-color: #edeeef;
-}
-#companies{
-  margin-top: 20px;
-  padding: 15px;
-}
-
-#companies .fa
-{
-  font-size: 60px;
-  color: #d2d2d2;
-}
-/*============================== End companies Section ==============================*/
 
 
 /* ========================== Start footer ======================= */
+
 .footer {
-    background-color:whitesmoke
+    background-color: whitesmoke
 }
 
 .footer .fa {
     margin-left: 15px;
     font-size: 30px;
 }
- {
+
+.top {
     position: fixed;
     right: 20px;
     color: #fff;
@@ -870,17 +938,78 @@ a {
     display: none;
 }
 
+
 /*============================ MEDIA ============================*/
+
 @media (max-width:765px) {
-    .navbar_head .navbar{
+
+    /* HOME 2 */
+    .cd-headline.clip b{
+        font-size: 28px;
+    }
+    /* HOME 2 */
+    
+    .navbar_head .navbar,.navbar_head2 .navbar2 {
         background-color: transparent;
         position: fixed;
-        color: black
+        color: black;
     }
-    .navbar-inverse .navbar-toggle  {
-        margin-left:400px;    
+    .navbar-inverse .navbar-toggle {
+        margin-left: 400px;
     }
     .navbar-brand {
         display: none;
     }
+    .cta .btn {
+        top: 0;
+    }
+
+    .navbar_head .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form{
+        margin-top: -5px;
+        position: absolute;
+        right: 0px;
+        background-color: #6f6f6f;
+    }
+
+    /* HOME 2 */
+    .navbar_head2 .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form{
+        position: absolute;
+        right: 0px;
+        background-color: #0003;
+    }   
+    /* HOME 2 */ 
+
+    .slider{
+        min-height: 0px;
+    }
+
+    .slider .carousel-inner img{
+        height: 400px;
+    }    
+
+    .carousel-caption h1{
+        font-size: 30px;
+    }
+
+    .welcome{
+        padding-top: 10px;
+    }
+
+    .promise .promise-picture{
+        border-right-color: #efecec; 
+    }
+    .promise .promise-text{
+        height: auto;
+    }
+
+    .timeline-body > p, .timeline-body > ul{
+        font-size: 10px;
+    }
+}
+
+@media(min-width:768px) and (max-width:991px) {
+    .cta .btn {
+        top: 0;
+    }
+
 }

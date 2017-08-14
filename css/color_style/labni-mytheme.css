@@ -1,0 +1,68 @@
+.f-icon,
+.navbar_head.navbar-inverse .navbar-toggle .icon-bar,
+.navbar-inverse .navbar-toggle .icon-bar,
+.progress .progress-bar,
+.cta,
+.top,
+.contact-us button:hover,
+.navbar-header a:first-letter,
+#portfolio .menu .btn-danger,
+.footer h2:first-letter
+{
+    background-color:#10b1c0
+}
+#portfolio .menu .btn-danger:hover {
+    background-color: #079eac !important;  
+}
+#portfolio .menu .btn-danger.active {
+    background-color: #079eac !important;
+}
+.contact-us button {
+    background-color: #539599;
+    border:#539599;
+}
+
+.top-bar  .social li a:hover,
+.top-bar .address ul li a:hover,
+.navbar_head .navbar-brand span,
+.slider .carousel-caption h1,
+.navbar_head2 .navbar-brand span,
+.navbar_head2 .header-text b,
+.counter-about-us .count .fa,
+.counter-about-us .count,
+.promise .promise-icons h2 i,
+.cta .btn:hover,
+.companies .owl-carousel .fa:hover,
+.contact-us .fa,
+.footer span,
+.footer .fa,
+.feat span,
+.skills span,
+.promise span,
+.portfolio span,
+.slider .carousel-control span:hover,
+#companies .fa:hover ,
+#portfolio .caption a
+{
+    color: #10b1c0 !important
+}
+
+.slick-slide img {
+    border: 3px solid #10b1c0;
+}
+
+.navbar-inverse ul li:hover
+
+{
+	border-bottom: 2px solid #10b1c0;
+}
+
+.contact-us textarea:focus,
+.contact-us input[type="text"]:focus
+{ 
+    box-shadow:1px 1px 1px #10b1c0 inset,
+    1px 1px 1px #10b1c0;
+}
+.option-box .color-option h4:after { 
+        border:2px solid  #10b1c0
+}
